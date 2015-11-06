@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">University of Kabianga</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- STRINGS ABOUT THE SIDE_VAV_BAR-->
+    <string name="nav_timetable">TIME TABLE</string>
+    <string name="nav_help">HELP AND SUPPORT</string>
+    <string name="nav_reset">Reset Your Password</string>
+
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email"> Student Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="checkbox_remember">Remember me</string>
+
+    <!-- About the version and the developer of the application-->
+    <string name="app_version">Software : 0.97</string>
+    <string name="app_platform">Software : Android</string>
+    <string name="app_network">Network : Online</string>
+    <string name="app_serverVersion">Server version : 0.97</string>
+    <string name="app_time">Time: 14-10-2015</string>
+    <string name="app_timeZone">Time Zone : GMT(+3.00 Nairobi)</string>
+
+    <string name="about_developer">Dennis Korir Computer science Major at University of Kabianga. Feel freel to visit his site at www.geekclash.com</string>
+
+    <string name="title_activity_about__author">About</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_social_media">SocialMediaActivity</string>
+    <string name="title_activity_splash">University of Kabianga</string>
+</resources>

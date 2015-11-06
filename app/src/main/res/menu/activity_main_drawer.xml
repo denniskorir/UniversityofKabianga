@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_timeTable" android:icon="@android:drawable/ic_menu_camera"
+            android:title="@string/nav_timetable" />
+        <item android:id="@+id/nav_grades" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="GRADES" />
+        <item android:id="@+id/nav_calendar" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="CALENDAR" />
+        <item android:id="@+id/nav_news" android:icon="@android:drawable/ic_menu_manage"
+            android:title="CAMPUS NEWS" />
+        <item android:id="@+id/nav_contacts" android:icon="@android:drawable/ic_menu_manage"
+            android:title="CONTACTS US" />
+        <item android:id="@+id/nav_website" android:icon="@android:drawable/ic_menu_manage"
+            android:title="KABIANGA.AC.KE" />
+        <item android:id="@+id/nav_social" android:icon="@android:drawable/ic_menu_manage"
+            android:title="SOCIAL MEDIA LINKS" />
+        <item android:id="@+id/nav_map" android:icon="@android:drawable/ic_menu_manage"
+            android:title="LOCATION" />
+    </group>
+
+    <item android:title="@string/nav_help">
+        <menu>
+            <item android:id="@+id/nav_reset_password" android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/nav_reset" />
+            <item android:id="@+id/nav_feedback" android:icon="@android:drawable/ic_menu_send"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+    <item android:title="ACTIONS">
+        <menu>
+            <item android:id="@+id/nav_about" android:icon="@android:drawable/ic_menu_share"
+                android:title="About" />
+            <item android:id="@+id/nav_login" android:icon="@android:drawable/ic_menu_send"
+                android:title="Sign in" />
+        </menu>
+    </item>
+
+</menu>

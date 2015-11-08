@@ -93,7 +93,8 @@
         android:background="#ff6d00"
         android:text="Open Source Licenses"
         android:padding="20dp"
-        android:id="@+id/button"
+        android:id="@+id/btnlicense"
+        android:onClick="sendMessage"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 

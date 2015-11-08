@@ -10,4 +10,24 @@
     tools:showIn="@layout/activity_license"
     tools:context="com.university.kabianga.universityofkabianga.licenseActivity">
 
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/app_license"
+        android:id="@+id/txt_licence"
+        android:layout_alignTop="@+id/scrollView"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

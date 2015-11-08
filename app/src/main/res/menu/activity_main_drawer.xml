@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_timeTable" android:icon="@android:drawable/ic_menu_camera"
+        <item android:id="@+id/nav_timeTable" android:icon="@android:drawable/ic_menu_today"
             android:title="@string/nav_timetable" />
-        <item android:id="@+id/nav_grades" android:icon="@android:drawable/ic_menu_gallery"
+        <item android:id="@+id/nav_grades" android:icon="@android:drawable/ic_input_get"
             android:title="GRADES" />
-        <item android:id="@+id/nav_calendar" android:icon="@android:drawable/ic_menu_slideshow"
+        <item android:id="@+id/nav_calendar" android:icon="@android:drawable/ic_menu_month"
             android:title="CALENDAR" />
-        <item android:id="@+id/nav_news" android:icon="@android:drawable/ic_menu_manage"
+        <item android:id="@+id/nav_news" android:icon="@android:drawable/ic_dialog_info"
             android:title="CAMPUS NEWS" />
         <item android:id="@+id/nav_contacts" android:icon="@android:drawable/ic_menu_manage"
             android:title="CONTACTS US" />
-        <item android:id="@+id/nav_website" android:icon="@android:drawable/ic_menu_manage"
+        <item android:id="@+id/nav_website" android:icon="@android:drawable/ic_menu_call"
             android:title="KABIANGA.AC.KE" />
-        <item android:id="@+id/nav_social" android:icon="@android:drawable/ic_menu_manage"
+        <item android:id="@+id/nav_social" android:icon="@android:drawable/ic_menu_agenda"
             android:title="SOCIAL MEDIA LINKS" />
-        <item android:id="@+id/nav_map" android:icon="@android:drawable/ic_menu_manage"
+        <item android:id="@+id/nav_map" android:icon="@android:drawable/ic_dialog_map"
             android:title="LOCATION" />
     </group>
 
@@ -31,9 +31,9 @@
 
     <item android:title="ACTIONS">
         <menu>
-            <item android:id="@+id/nav_about" android:icon="@android:drawable/ic_menu_share"
+            <item android:id="@+id/nav_about" android:icon="@android:drawable/ic_menu_more"
                 android:title="About" />
-            <item android:id="@+id/nav_login" android:icon="@android:drawable/ic_menu_send"
+            <item android:id="@+id/nav_login" android:icon="@android:drawable/ic_dialog_email"
                 android:title="Sign in" />
         </menu>
     </item>

@@ -116,11 +116,11 @@ public class Campus_newsActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "ACADEMICS";
                 case 1:
-                    return "SECTION 2";
+                    return "SPORTS";
                 case 2:
-                    return "SECTION 3";
+                    return "POLITICS";
             }
             return null;
         }

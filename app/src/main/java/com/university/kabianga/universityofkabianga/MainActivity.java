@@ -13,9 +13,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import java.util.ArrayList;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Context;
+import android.view.Menu;
+import android.widget.AdapterView;
+import android.widget.GridView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    GridView gv;
+    Context context;
+    ArrayList prgmName;
+    public static String[] prgmNameList={"About Kabianga ","Calendar of Events","Time Table","Emargecy Contacts","Location"};
+    public static int [] prgmImages={R.drawable.home153,R.drawable.notes26,R.drawable.calendar68,R.drawable.telephone79,R.drawable.facebook30};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +37,19 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        gv=(GridView) findViewById(R.id.gridViewmain);
+        gv.setAdapter(new customAdapter(this, prgmNameList, prgmImages));
+
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Snackbar.make(view, "Log in", Snackbar.LENGTH_LONG)
-                   //     .setAction("Action", null).show();
+                //     .setAction("Action", null).show();
 
-                Intent logintent= new Intent(MainActivity.this, LoginActivity.class);
+                Intent logintent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(logintent);
             }
         });
@@ -44,7 +62,13 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
     }
+
+
+
 
     @Override
     public void onBackPressed() {
@@ -91,12 +115,18 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_calendar) {
 
         } else if (id == R.id.nav_news) {
+            // opening the news
+            Intent social_intent= new Intent(MainActivity.this,Campus_newsActivity.class);
+            startActivity(social_intent);
 
         }
         else if (id == R.id.nav_contacts) {
 
         }
         else if (id == R.id.nav_website) {
+            // opening the university website
+            Intent uokWebsite= new Intent(MainActivity.this, web_Activity.class);
+            startActivity(uokWebsite);
 
 
         }

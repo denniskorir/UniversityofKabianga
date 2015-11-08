@@ -5,8 +5,16 @@
     android:background="#000"
     android:layout_height="match_parent">
 
-
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="University of Kabianga"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -18,16 +26,14 @@
         android:textColor="#ffa000"
         android:textSize="25sp" />
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="University of Kabianga"
-        android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" />
+        android:id="@+id/imageView3"
+        android:src="@mipmap/ic_logo_kabianga"
+        android:layout_weight="20"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

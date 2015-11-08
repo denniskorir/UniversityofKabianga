@@ -1,9 +1,10 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle" >
-    <gradient
-        android:startColor="#81C784"
-        android:centerColor="#4CAF50"
-        android:endColor="#2E7D32"
-        android:type="linear"
-        android:angle="135"/>
-</shape>
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@color/splash_color"/>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/ic_logo_kabianga"/>
+    </item>
+</layer-list>

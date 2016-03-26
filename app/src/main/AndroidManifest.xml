@@ -45,7 +45,8 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyD1qCcVAsgQEVYdXxu6NV2kAMhrUdn3TIU" />
+        <!--AIzaSyD1qCcVAsgQEVYdXxu6NV2kAMhrUdn3TIU-->
 
         <activity
             android:name=".MapsActivity"
@@ -79,6 +80,7 @@
         <activity
             android:name=".web_Activity"
             android:label="@string/title_activity_web_"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
@@ -105,6 +107,7 @@
         </activity>
         <activity
             android:name=".youtubeActivity"
+
             android:label="@string/title_activity_youtube"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
@@ -116,6 +119,17 @@
         <activity
             android:name=".uokfeeds"
             android:label="@string/title_activity_uokfeeds"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ChristianActivity"
+            android:label="@string/title_activity_christian"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".contactsActivity"
+            android:label="@string/title_activity_contacts"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>

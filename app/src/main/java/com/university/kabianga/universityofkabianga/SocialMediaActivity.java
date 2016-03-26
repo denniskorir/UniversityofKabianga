@@ -45,12 +45,7 @@ public class SocialMediaActivity extends AppCompatActivity {
 
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                // Send intent to SingleViewActivity
-                //Intent i = new Intent(getApplicationContext(), SocialMediaActivity.class);
 
-                // Pass image index
-                //i.putExtra("id", position);
-                // startActivity(i);
                 Intent myIntent = null;
                 if (position == 0) {
                     myIntent = new Intent(v.getContext(), facebooActivity.class);

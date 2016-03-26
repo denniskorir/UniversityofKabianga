@@ -29,8 +29,8 @@
     <string name="checkbox_remember">Remember me</string>
 
     <!-- About the version and the developer of the application-->
-    <string name="app_version">Software : 0.97</string>
-    <string name="app_platform">Software : Android</string>
+    <string name="app_version">Software version 0.97</string>
+    <string name="app_platform">Platform : Android</string>
     <string name="app_network">Network : Online</string>
     <string name="app_serverVersion">Server version : 0.97</string>
     <string name="app_time">Time: 14-10-2015</string>
@@ -71,4 +71,6 @@ SOFTWARE.
     <string name="title_activity_youtube">Uok Youtube Channel</string>
     <string name="title_activity_instagram2">Instagram</string>
     <string name="title_activity_uokfeeds">Uok Feeds</string>
+    <string name="title_activity_christian">Student Portal</string>
+    <string name="title_activity_contacts">Contacts</string>
 </resources>

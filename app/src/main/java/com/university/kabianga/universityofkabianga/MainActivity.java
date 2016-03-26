@@ -1,6 +1,7 @@
 package com.university.kabianga.universityofkabianga;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,12 +24,21 @@ import android.widget.GridView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     GridView gv;
     Context context;
     ArrayList prgmName;
-    public static String[] prgmNameList={"About Kabianga ","Calendar of Events","Time Table","Emargecy Contacts","Location"};
-    public static int [] prgmImages={R.drawable.home153,R.drawable.notes26,R.drawable.calendar68,R.drawable.telephone79,R.drawable.facebook30};
+    public static String[] prgmNameList={"Website","Student Portal","Calendar","Time Table","Events","Contacts","Feedbak","Campus News","Social Media","Map"};
+    public static int [] prgmImages={
+            R.drawable.school1,
+            R.drawable.university,
+            R.drawable.calendar,
+            R.drawable.school,
+            R.drawable.events,
+            R.drawable.contacts,
+            R.drawable.three115,
+            R.drawable.test1,
+            R.drawable.users6,
+            R.drawable.university2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,11 +46,53 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        gv=(GridView) findViewById(R.id.gridViewmain);
-        gv.setAdapter(new customAdapter(this, prgmNameList, prgmImages));
+        gv=(GridView) findViewById(R.id.gridMain);
+        gv.setAdapter(new CustomGrid(this, prgmNameList, prgmImages));
 
 
+
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+
+                Intent myIntent = null;
+                if (position == 0) {
+                    myIntent = new Intent(v.getContext(), web_Activity.class);
+                }
+                if (position == 1) {
+                    myIntent = new Intent(v.getContext(), ChristianActivity.class);
+                }
+                if (position == 2) {
+                    myIntent = new Intent(v.getContext(), gplusActivity.class);
+                }
+                if (position == 3) {
+                        myIntent =new Intent(v.getContext(),LoginActivity.class);
+
+
+                }
+                if (position == 4) {
+                    myIntent = new Intent(v.getContext(), instagram2Activity.class);
+                }
+                if (position == 5) {
+                    myIntent = new Intent(v.getContext(), contactsActivity.class);
+                }
+                if (position == 6) {
+                    myIntent = new Intent(v.getContext(), instagram2Activity.class);
+                }
+                if (position == 7) {
+                    myIntent = new Intent(v.getContext(), Campus_newsActivity.class);
+                }
+                if (position == 8) {
+                    myIntent = new Intent(v.getContext(), SocialMediaActivity.class);
+                }
+                if (position == 9) {
+                    myIntent = new Intent(v.getContext(), MapsActivity.class);
+                }
+
+                startActivity(myIntent);
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
